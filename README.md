@@ -104,7 +104,7 @@ Follow the plan step-by-step. Check off completed items (☑).
 
 bash
 # Clone the repository
-git clone https://github.com/Codfski/Signumtrace
+git clone https://github.com/Codfski/Signumtrace-
 
 # Navigate to templates
 cd signumtrace/templates
