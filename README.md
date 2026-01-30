@@ -1,3 +1,5 @@
+
+```
 # SignumTrace
 
 **Symbolic execution tracking for complex projects**
@@ -7,8 +9,9 @@ Stop writing plans that never execute. SignumTrace turns symbolic notation into 
 ## What is SignumTrace?
 
 SignumTrace combines two concepts:
-- **Signum** (Latin: sign, symbol) - Symbolic notation for planning
-- **Trace** (track, follow) - Execution tracking and monitoring
+
+- **Signum** (Latin: *sign, symbol*) – Symbolic notation for planning
+- **Trace** (*track, follow*) – Execution tracking and monitoring
 
 The result: Plans that write themselves in symbols and track their own execution.
 
@@ -18,37 +21,44 @@ Every SignumTrace plan uses executable symbols:
 
 | Symbol | Meaning | Example |
 |--------|---------|---------|
-| ✓ | Current state | ✓ API latency: 450ms |
-| ▶ | Next action | ▶ Implement caching layer |
-| # | Target metric | # Reduce to <100ms |
-| ⚙ | Implementation | ⚙ Redis cache with 1hr TTL |
-| ☑ | Validation | ☑ Load test 10K requests |
-| 👤 | Owner | 👤 Backend Engineer 1 |
-| ⏱️ | Timeline | ⏱️ Complete by Friday |
-| 🔗 | Dependencies | 🔗 Requires Redis setup |
-| 🚩 | Risk | 🚩 Cache invalidation complexity |
-| ⟿ | Chain logic | ⟿ If successful → deploy to prod |
-| ◉ | Conditional | ◉ If latency still >150ms → try CDN |
-| ↻ | Loop/retry | ↻ Iterate until target met |
+| `✓` | Current state | `✓ API latency: 450ms` |
+| `▶` | Next action | `▶ Implement caching layer` |
+| `#` | Target metric | `# Reduce to <100ms` |
+| `⚙` | Implementation | `⚙ Redis cache with 1hr TTL` |
+| `☑` | Validation | `☑ Load test 10K requests` |
+| `👤` | Owner | `👤 Backend Engineer` |
+| `⏱️` | Timeline | `⏱️ Complete by Friday` |
+| `🔗` | Dependencies | `🔗 Requires Redis setup` |
+| `🚩` | Risk | `🚩 Cache invalidation complexity` |
+| `⟿` | Chain logic | `⟿ If successful → deploy to prod` |
+| `◉` | Conditional | `◉ If latency >150ms → try CDN` |
+| `↻` | Loop/retry | `↻ Iterate until target met` |
 
 ## Quick Example
 
-signumtrace
-✓ User signup conversion: 45%
-⟿ Below industry standard (65%)
-▶ Simplify registration form
+```
+
+signumtrace 
+✓ User signup conversion: 45% 
+⟿ Below industry standard (65%) 
+▶ Simplify registration form 
 ⚙ Reduce fields from 12 → 5
-   - Remove: Company size, Industry, Phone
-   - Keep: Name, Email, Password, Company, Role
-# Target: 45% → 60% conversion
+
+· Remove: Company size, Industry, Phone
+· Keep: Name, Email, Password, Company, Role
+
+Target: 45% → 60% conversion
+
 ☑ A/B test with 10K users
 👤 Product Manager
 ⏱️ Sprint 3 (2 weeks)
 🔗 Depends on: Analytics dashboard ready
 🚩 Risk: Reduced data may hurt sales qualification
 ⟿ ◉ If conversion >55% → full rollout
-   ◉ If conversion <50% → revert + try different approach ↻
+◉ If conversion <50% → revert + try different approach
+↻
 
+```
 
 ## Use Cases
 
@@ -69,92 +79,140 @@ signumtrace
 
 ## Getting Started
 
-### 1. Choose a Template
+### 1. Install
 
-Browse the `templates/` folder for your use case
+```bash
+npm install -g signum-trace
+```
 
-### 2. Fill In Your Plan
+2. Create Your First Plan
 
-Replace placeholders with your actual:
-- Current state (✓)
-- Target metrics (#)
-- Actions (▶)
-- Timelines (⏱️)
+```bash
+signumtrace init my-project.st
+```
 
-### 3. Execute & Track
+3. Edit the Template
+
+Open my-project.st and fill in:
+
+1. Current state (✓)
+2. Target metrics (#)
+3. Actions (▶)
+4. Timeline (⏱️)
+
+4. Execute & Track
+
+```bash
+signumtrace execute my-project.st
+```
 
 Follow the plan step-by-step. Check off completed items (☑).
 
-## Why SignumTrace?
+Why SignumTrace?
 
-### Traditional Planning Problems
-- Ambiguous language ("we should consider...")
-- No clear ownership
-- Success criteria undefined
-- Failure modes undocumented
+Traditional Planning Problems
 
-### SignumTrace Solution
-- Symbolic notation (no ambiguity)
-- Single owner per task (👤)
-- Measurable targets (#)
-- Risk-first thinking (🚩)
-- Explicit decision gates (⟿ ◉)
+· Ambiguous language ("we should consider...")
+· No clear ownership
+· Success criteria undefined
+· Failure modes undocumented
 
-## Installation
+SignumTrace Solution
 
-bash
+· Symbolic notation (no ambiguity)
+· Single owner per task (👤)
+· Measurable targets (#)
+· Risk-first thinking (🚩)
+· Explicit decision gates (⟿ ◉)
+
+Installation
+
+From Source
+
+```bash
 # Clone the repository
-git clone https://github.com/Codfski/Signumtrace
+git clone https://github.com/Codfski/signumtrace
 
-# Navigate to templates
-cd signumtrace/templates
+# Navigate to project
+cd signumtrace
 
-# Copy and edit a template
-cp template.st my_project.st
+# Install dependencies
+npm install
 
+# Link globally
+npm link
+```
 
-## Community
+Using npm
 
-- **GitHub Discussions**: Ask questions, share plans
-- **Issues**: Bug reports and feature requests
+```bash
+npm install -g signum-trace
+```
 
-## Roadmap
+Community
 
-**Q1 2026** (Now)
-- ✅ Core symbolic notation defined
-- ✅ Initial templates released
-- 🚧 Community building
-- 🚧 Documentation
+· GitHub Discussions: Ask questions, share plans
+· Issues: Bug reports and feature requests
+· Contributing: See CONTRIBUTING.md
 
-**Q2 2026**
-- VSCode extension (syntax highlighting)
-- CLI tool (project initialization)
-- GitHub Actions integration
-- Template marketplace
+Roadmap
 
-**Q3 2026**
-- Web-based editor
-- Real-time collaboration
-- AI-powered plan generation
-- Progress tracking dashboard
+Q1 2025 (Now)
 
-## Philosophy
+· ✅ Core symbolic notation defined
+· ✅ Initial templates released
+· 🚧 Basic parser implementation
+· 🚧 CLI tool development
 
-> "A signum without a trace is just a mark.  
-> A trace without a signum is just chaos.  
-> Together, they create executable intention."
+Q2 2025
 
-## License
+· VS Code extension (syntax highlighting)
+· GitHub Actions integration
+· Template marketplace
+· Interactive web demo
 
-MIT License - see [LICENSE)
+Q3 2025
 
-## About
+· Real-time collaboration
+· AI-powered plan generation
+· Progress tracking dashboard
+· Mobile app (view-only)
 
-**Created by TraceOn Lab**  
-Independent research lab. 
+Philosophy
 
-Building tools for executable reasoning and symbolic intelligence.
+"A signum without a trace is just a mark.
+A trace without a signum is just chaos.
+Together, they create executable intention."
 
+License
 
+MIT License - see LICENSE for details.
 
-**Start tracking with SignumTrace**
+About
+
+Created by TraceOn Lab
+Independent research lab building tools for executable reasoning and symbolic intelligence.
+
+Start tracking with SignumTrace today!
+
+```
+
+---
+
+## **QUICK FIX FOR YOUR EXISTING REPOSITORY:**
+
+```bash
+# In your signumtrace directory:
+# Replace just the README.md with the content above
+
+# Option 1: Use a text editor and paste the content above
+# Option 2: Use this command (if you want to overwrite):
+cat > README.md << 'EOF'
+[PASTE THE ENTIRE CONTENT ABOVE HERE]
+EOF
+
+# Then commit:
+git add README.md
+git commit -m "docs: Fix README formatting and table display"
+git push
+```
