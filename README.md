@@ -151,7 +151,7 @@ MIT License - see [LICENSE)
 ## About
 
 **Created by TraceOn Lab**  
-Independent research lab based in Libya 🇱🇾
+Independent research lab. 
 
 Building tools for executable reasoning and symbolic intelligence.
 
