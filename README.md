@@ -16,7 +16,17 @@
 **Average efficiency gain:** 3x faster project completion  
 **Team impact:** 70% fewer planning meetings, 100% auditability
 
-👉 [See detailed case studies](examples/)
+👉 [See detailed case study: Content Moderation System](examples/content-moderation-case-study.st)
+
+**Other examples:**
+- [Medical Crisis Response](templates/medical-crisis-response.st)
+- [More templates available](templates/)
+
+**Quick results from our case study:**
+- **$2.5M saved** annually (50% cost reduction)
+- **1.8 hour response time** (was 24 hours)
+- **70% of content automated**
+- **91.2% accuracy maintained**
 
 ## Why This Matters
 Most planning tools create documents that never execute. SignumTrace creates **auditable workflows** that:
