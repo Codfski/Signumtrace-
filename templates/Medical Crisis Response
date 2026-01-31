@@ -1,0 +1,116 @@
+# Medical Crisis Response Template
+
+Crisis Context
+🚨 Code Blue: [Patient ID/Description]
+✓ Current: [Vitals, symptoms, immediate threat]
+✓ Time since onset: [Minutes]
+✓ Available resources: [Staff, equipment, meds]
+👤 Crisis Lead: [Name]
+⏱️ Window: [Critical time window]
+
+---
+
+Immediate Assessment (First 2 Minutes)
+Task 1.1: ABCDE Assessment
+✓ Airway: [Patent/Obstructed]
+✓ Breathing: [Rate, O2 sat]
+✓ Circulation: [HR, BP, perfusion]
+✓ Disability: [GCS, neuro]
+✓ Exposure: [Temp, visible issues]
+⚙ Protocol: Follow ACLS/ATLS guidelines
+# Target: Complete assessment in <2min
+☑ Validation: Second clinician confirm
+🚩 Risk: Missed injury, wrong priority
+⟿ ◉ If stable → Secondary survey
+   ◉ If unstable → Immediate intervention ◉
+
+---
+
+Task 1.2: Resource Mobilization
+✓ Need: [Specific equipment/personnel]
+▶ Action: Delegate roles
+⚙ Implementation:
+- Team Leader: [Name] (coordinates)
+- Airway: [Name] (airway management)
+- Circulation: [Name] (IV access, meds)
+- Recorder: [Name] (documents everything)
+- Runner: [Name] (gets supplies)
+# Target: All roles filled in <1min
+☑ Validation: Role call response
+🚩 Risk: Role confusion, missing team members
+⟿ ◉ If team complete → Execute plan
+   ◉ If missing roles → Adjust assignments ↻
+
+---
+
+Intervention Phase (Minutes 2-10)
+Task 2.1: Primary Intervention
+✓ Problem: [Primary life threat]
+▶ Action: [Specific intervention]
+⚙ Implementation:
+- Medication: [Drug, dose, route]
+- Procedure: [Step-by-step]
+- Monitoring: [What to watch]
+# Target: [Expected improvement metric]
+☑ Validation: Continuous vitals monitoring
+⏱️ Every 60 seconds: Reassess
+🚩 Risk: Intervention complication, allergic reaction
+⟿ ◉ If improving → Continue
+   ◉ If worsening → Escalate/change approach ◉
+
+---
+
+Task 2.2: Parallel Diagnostics
+✓ While intervention ongoing
+▶ Action: Run diagnostics
+⚙ Implementation:
+- Labs: [Blood gas, CBC, chem7]
+- Imaging: [X-ray, FAST exam]
+- Consults: [Specialist notified]
+# Target: Results in <15min
+☑ Validation: Results documented, reviewed
+🚩 Risk: Delayed results, sample error
+⟿ ◉ If diagnostic clarity → Adjust treatment
+   ◉ If unclear → Additional tests ↻
+
+---
+
+Stabilization & Handoff
+Task 3.1: Prepare for Transfer
+✓ Patient: [Current status]
+▶ Action: Prepare for ICU/OR/Transfer
+⚙ Implementation:
+- Documentation: Complete SOAP note
+- Equipment: Ventilator, monitors ready
+- Communication: Receiving team briefed
+- Family: Updated (if appropriate)
+# Target: Ready for transfer in <30min
+☑ Validation: Transfer checklist complete
+🚩 Risk: Deterioration during transfer
+⟿ ◉ If stable for transfer → Proceed
+   ◉ If unstable → Stabilize further ↻
+
+---
+
+Task 3.2: Debrief & Learning
+✓ Crisis resolved
+▶ Action: Team debrief
+⚙ Implementation:
+- Timeline review: What happened when
+- What went well: [List]
+- What to improve: [List]
+- System issues: [Equipment, protocols]
+# Target: Actionable improvements identified
+☑ Validation: Debrief documented, changes assigned
+👤 Quality Lead: [Name]
+⏱️ Within 24 hours
+🚩 Risk: Blame culture, missed learning
+⟿ ◉ If lessons learned → Update protocols
+   ◉ If systemic issues → Quality improvement project ↻
+
+---
+Template Metadata
+✓ Template: Medical Crisis Response
+✓ Based on: ACLS/ATLS protocols
+✓ Version: 3.1
+✓ Critical: LIFE-THREATENING USE ONLY
