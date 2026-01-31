@@ -1,7 +1,6 @@
-# AI Research Project Template (SignumTrace Format)
+# AI Research Project Template
 
-## Project Overview
-
+Project Overview
 ✓ Project: [Project Name]
 ✓ Goal: [What you're trying to achieve]
 ✓ Timeline: [Start date] → [Target completion]
@@ -9,19 +8,16 @@
 
 ---
 
-## Phase 1: Hypothesis & Setup
+Phase 1: Hypothesis & Setup
 
-### Task 1.1: Define Research Question
-
+Task 1.1: Define Research Question
 ✓ Current state: [What's known in the field]
 ⟿ Gap: [What's unknown or unsolved]
 ▶ Research question: [Specific, testable question]
-
 # Success criteria:
 - Question is falsifiable
 - Answerable with available resources
 - Novel contribution to field
-
 ☑ Validation: 2 peer researchers review and approve
 👤 Owner: [Name]
 ⏱️ Deadline: [Date]
@@ -32,15 +28,11 @@
 
 ---
 
-### Task 1.2: Dataset Acquisition
-
+Task 1.2: Dataset Acquisition
 ✓ Current data: [What you have now]
 ⟿ Need: [What additional data required]
 ▶ Action: [Specific steps to acquire/create dataset]
-
 ⚙ Implementation:
-```python
-# Example data collection script
 import pandas as pd
 
 def collect_data(source, filters):
@@ -48,17 +40,13 @@ def collect_data(source, filters):
     pass
 
 dataset = collect_data(source="...", filters={...})
-```
-
 # Target metrics:
 - Dataset size: [N samples]
 - Quality: [Labeling accuracy / cleanliness criteria]
 - Diversity: [Coverage of edge cases]
-
-☑ Validation: 
+☑ Validation:
 - Statistical analysis shows no obvious bias
 - Sample manually reviewed (N=100)
-
 👤 Owner: [Name]
 ⏱️ Deadline: [Date]
 🔗 Depends on: IRB approval (if human subjects)
@@ -68,31 +56,23 @@ dataset = collect_data(source="...", filters={...})
 
 ---
 
-## Phase 2: Model Development
+Phase 2: Model Development
 
-### Task 2.1: Baseline Implementation
-
+Task 2.1: Baseline Implementation
 ✓ Current: No model exists
 ▶ Action: Implement simple baseline
-
 ⚙ Implementation:
-```python
-# Baseline model
 from sklearn.linear_model import LogisticRegression
 
 baseline = LogisticRegression()
 baseline.fit(X_train, y_train)
 baseline_score = baseline.score(X_test, y_test)
-```
-
 # Target: Establish baseline performance
 - Metric: [Accuracy / F1 / Loss]
 - Baseline score: [Expected value]
-
-☑ Validation: 
+☑ Validation:
 - Results reproducible across 3 runs
 - Documented in notebook
-
 👤 Owner: [Name]
 ⏱️ Deadline: [Date]
 🔗 Depends on: Task 1.2 (dataset ready)
@@ -102,15 +82,13 @@ baseline_score = baseline.score(X_test, y_test)
 
 ---
 
-### Task 2.2: Advanced Model
-
+Task 2.2: Advanced Model
 ✓ Baseline: [Score]
 ⟿ Target: [Improvement target, e.g., +10% accuracy]
 ▶ Action: Implement [Specific architecture]
-
 ⚙ Implementation:
-```python
-# Advanced model architecture
+import torch.nn as nn
+
 class MyModel(nn.Module):
     def __init__(self):
         # Your architecture
@@ -119,16 +97,12 @@ class MyModel(nn.Module):
     def forward(self, x):
         # Forward pass
         pass
-```
-
 # Target metrics:
 - Performance: Baseline + [X%] improvement
 - Efficiency: [Inference time / memory usage]
-
 ☑ Validation:
 - Outperforms baseline on held-out test set
 - Statistical significance test (p < 0.05)
-
 👤 Owner: [Name]
 ⏱️ Deadline: [Date]
 🔗 Depends on: Baseline established
@@ -138,21 +112,17 @@ class MyModel(nn.Module):
 
 ---
 
-## Phase 3: Evaluation & Publication
+Phase 3: Evaluation & Publication
 
-### Task 3.1: Paper Writing
-
+Task 3.1: Paper Writing
 ✓ Results validated
 ▶ Action: Write paper for [Conference Name]
-
-# Target: 
+# Target:
 - Submission by [Conference deadline]
 - Clear, reproducible methodology
-
 ☑ Validation:
 - 3 co-authors review and approve
 - Meets conference formatting guidelines
-
 👤 Owner: [Name]
 ⏱️ Deadline: [Date]
 🚩 Risk: Writing takes longer than expected
@@ -160,13 +130,8 @@ class MyModel(nn.Module):
    ◉ If rejected → revise and submit to next venue ↻
 
 ---
-
-## Notes
-
-Add any additional context, ideas, or references here.
-
----
-
-**Template Version:** 1.0  
-**Last Updated:** 2026-01  
-**License:** MIT
+Template Metadata
+✓ Template: AI Research Project (Standard)
+✓ Version: 2.0
+✓ Created: 2026-01
+✓ License: MIT
