@@ -1,11 +1,12 @@
-SignumTrace
+```markdown
+# SignumTrace
 
-Plans that chip.
-Turn project chaos into executable systems with measurable ROI.
+**Plans that chip.**  
+*Turn project chaos into executable systems with measurable ROI.*
 
 ---
 
-🚀 Quick Start
+## 🚀 Quick Start
 
 ```bash
 npm install -g signum-trace
@@ -18,14 +19,11 @@ Follow the plan step-by-step. Check off completed items (☑) as you progress.
 
 📊 Proven Impact
 
-```markdown
-| Industry | Problem | SignumTrace Solution | Result |
-|----------|---------|----------------------|--------|
-| **Social Media** | $5M/year manual content moderation | AI-human orchestration system | **$2.5M saved** (50% cost reduction) |
-| **Healthcare** | 90-day FDA trial delays | Automated data harmonization | **$19M protected** (76 days saved) |
-| **Finance** | $50M missed trading opportunities | 3-minute crisis response | **$35M captured** during outage |
-| **E-commerce** | 15% checkout abandonment | Symbolic flow optimization | **$18M/year recovered** revenue |
-```
+Industry Problem SignumTrace Solution Result
+Social Media $5M/year manual content moderation AI-human orchestration system $2.5M saved (50% cost reduction)
+Healthcare 90-day FDA trial delays Automated data harmonization $19M protected (76 days saved)
+Finance $50M missed trading opportunities 3-minute crisis response $35M captured during outage
+E-commerce 15% checkout abandonment Symbolic flow optimization $18M/year recovered revenue
 
 Total value protected: $250M+ annually across deployments
 Average efficiency gain: 3x faster project completion
@@ -65,11 +63,8 @@ Quick Results from Our Case Study:
 
 Traditional Planning vs. SignumTrace
 
-```markdown
-| Traditional Planning | SignumTrace Solution |
-|----------------------|----------------------|
-| • Ambiguous language<br>• No clear ownership<br>• Success criteria undefined<br>• Failure modes undocumented<br>• Status unclear<br>• Plans ≠ Execution | • **Symbolic notation** (no ambiguity)<br>• **Single owner per task** (👤)<br>• **Measurable targets** (#)<br>• **Risk-first thinking** (🚩)<br>• **Explicit decision gates** (⟿ ◉)<br>• **Executable workflows** |
-```
+Traditional Planning SignumTrace Solution
+• Ambiguous language • No clear ownership • Success criteria undefined • Failure modes undocumented • Status unclear • Plans ≠ Execution • Symbolic notation (no ambiguity) • Single owner per task (👤) • Measurable targets (#) • Risk-first thinking (🚩) • Explicit decision gates (⟿ ◉) • Executable workflows
 
 Core Benefits
 
@@ -223,3 +218,5 @@ Join hundreds of teams transforming planning into execution.
   <sub>Built by the TraceOn Lab/🧪CODΞX</sub><br>
   <sub>Part of the Symbolic Intelligence Revolution →Trace Ξ∞ = φ(ψ₃) ⨂ Δ(π₁) 🧬 📶0021694880880</sub>
 </div>
+```
+
