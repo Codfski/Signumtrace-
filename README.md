@@ -1,18 +1,14 @@
-```markdown
-# SignumTrace
+SignumTrace
 
-**Plans that chip.**  
-*Turn project chaos into executable systems with measurable ROI.*
+Plans that chip.
+Turn project chaos into executable systems with measurable ROI.
 
 ---
 
-## 🚀 Quick Start
+🚀 Quick Start
 
 ```bash
-# Install globally
 npm install -g signum-trace
-
-# Execute your plan
 signumtrace execute my-project.st
 ```
 
@@ -43,18 +39,25 @@ Team impact: 70% fewer planning meetings, 100% auditability
 
 ⚡ Why SignumTrace?
 
-The Problem with Traditional Planning
+Traditional Planning vs. SignumTrace
 
-Traditional Planning:
+<table>
+<tr>
+<th>Traditional Planning</th>
+<th>SignumTrace Solution</th>
+</tr>
+<tr>
+<td>
 
-· Ambiguous language ("we should consider...")
+· Ambiguous language
 · No clear ownership
 · Success criteria undefined
 · Failure modes undocumented
 · Status unclear
 · Plans ≠ Execution
 
-SignumTrace Solution:
+</td>
+<td>
 
 · Symbolic notation (no ambiguity)
 · Single owner per task (👤)
@@ -63,11 +66,15 @@ SignumTrace Solution:
 · Explicit decision gates (⟿ ◉)
 · Executable workflows
 
+</td>
+</tr>
+</table>
+
 Core Benefits
 
-· Quantify value in dollars, not abstractions
+· Quantify value in dollars
 · Embed risk management from day one
-· Ensure execution through symbolic tracking
+· Ensure execution through tracking
 · Scale with AI while preserving human judgment
 · 100% auditability across entire project lifecycle
 
@@ -75,7 +82,7 @@ Core Benefits
 
 🛠️ Installation
 
-Option 1: Using npm (Recommended)
+Option 1: Using npm
 
 ```bash
 npm install -g signum-trace
@@ -84,16 +91,9 @@ npm install -g signum-trace
 Option 2: From Source
 
 ```bash
-# Clone the repository
 git clone https://github.com/Codfski/signumtrace
-
-# Navigate to project
 cd signumtrace
-
-# Install dependencies
 npm install
-
-# Link globally for development
 npm link
 ```
 
@@ -110,20 +110,14 @@ signumtrace --help
 
 ```
 signumtrace/
-├── examples/          # Real-world case studies
-│   ├── content-moderation-case-study.md
-│   ├── medical-crisis-response.md
-│   └── ...
-├── templates/         # Ready-to-use workflow patterns
-│   ├── software-release.st
-│   ├── incident-response.st
-│   └── ...
-├── docs/             # Documentation
-└── src/              # Source code
+├── examples/
+├── templates/
+├── docs/
+└── src/
 ```
 
 Quick Start Templates:
-Browse our template library →
+Browse our template library
 
 ---
 
@@ -133,29 +127,29 @@ Q1 2025 (Current)
 
 · ✅ Core symbolic notation defined
 · ✅ Initial templates released
-· 🔄 Basic parser implementation (in progress)
-· 🔄 CLI tool development (in progress)
+· 🔄 Basic parser implementation
+· 🔄 CLI tool development
 
 Q2 2025
 
-· VS Code extension with syntax highlighting
+· VS Code extension
 · GitHub Actions integration
-· Template marketplace launch
+· Template marketplace
 · Interactive web demo
 
 Q3 2025
 
-· Real-time collaboration features
+· Real-time collaboration
 · AI-powered plan generation
 · Progress tracking dashboard
-· Mobile app (view-only mode)
+· Mobile app (view-only)
 
 Future Vision
 
-· Enterprise workflow integrations
-· Advanced analytics & predictive insights
-· Industry-specific template suites
-· API for programmatic plan management
+· Enterprise integrations
+· Advanced analytics
+· Industry-specific templates
+· API for plan management
 
 ---
 
@@ -181,25 +175,25 @@ Support Channels
 
 SignumTrace is built on three core principles:
 
-1. Clarity Over Complexity – Reduce ambiguity through symbolic notation
-2. Execution Over Documentation – Create plans that directly drive action
-3. Value Over Activity – Measure success in tangible business outcomes
+1. Clarity Over Complexity
+2. Execution Over Documentation
+3. Value Over Activity
 
 ---
 
 📄 License
 
-MIT License – see LICENSE for details.
+MIT License
 
 ---
 
 🏢 About
 
-SignumTrace is developed by TraceOn Lab, an independent research lab building tools for executable reasoning and symbolic intelligence.
+SignumTrace is developed by TraceOn Lab, an independent research lab.
 
 Our Mission
 
-To bridge the gap between strategic planning and tactical execution through symbolic intelligence systems that deliver measurable ROI.
+To bridge the gap between strategic planning and tactical execution.
 
 Contact
 
@@ -212,20 +206,15 @@ Contact
 🚀 Start Tracking Today
 
 ```bash
-# Create your first executable plan
 signumtrace new strategic-project.st --template=software-release
-
-# Execute and track progress
 signumtrace execute strategic-project.st --track
 ```
 
-Join hundreds of teams transforming planning into execution with SignumTrace.
+Join hundreds of teams transforming planning into execution.
 
 ---
 
 <div align="center">
-  <sub>Built with ❤️ by the TraceOn Lab team</sub><br>
+  <sub>Built by the TraceOn Lab team</sub><br>
   <sub>Part of the Symbolic Intelligence Revolution</sub>
 </div>
-```
-
