@@ -1,0 +1,231 @@
+# AI Content Moderation System
+
+Project Overview
+✓ Project: Automated content moderation for 10M user platform
+✓ Timeline: 6 months (26 weeks)
+✓ Goal: 70% automation, <2hr response time, 50% cost reduction
+👤 Project Lead: [Name]
+
+Current State
+✓ Moderation: 80% manual, costs $5M/year
+✓ Response time: 24 hours average
+✓ Bad content exposure: 8 hours average
+✓ Team: 5 engineers, $500K budget
+✓ Languages: English + Arabic
+⟿ Problem: Manual moderation doesn't scale, too slow, too expensive
+
+---
+
+Phase 1: Foundation (Week 1-2)
+
+Task 1.1: Data Analysis
+✓ Current: Moderation decisions in production DB
+▶ Action: Extract and analyze 3 months of decisions
+⚙ Implementation:
+SELECT content_id, content_text, violation_type, 
+       moderator_decision, language, created_at
+FROM moderation_queue
+WHERE created_at > NOW() - INTERVAL '3 months'
+  AND moderator_decision IS NOT NULL;
+# Target: 50K labeled examples, violation distribution mapped
+☑ Validation: CSV export with clear distribution
+👤 Owner: ML Engineer 1
+⏱️ Deadline: Day 5
+🔗 Depends on: Database read access granted
+🚩 Risk: Arabic content under-represented (<20%)
+⟿ ◉ If <20% Arabic → supplement with labeling
+   ◉ If balanced → proceed to classification
+
+---
+
+Task 1.2: Classification System (MVP)
+✓ Historical data analyzed
+▶ Action: Deploy LLM classifier using Claude API
+⚙ Implementation:
+import anthropic
+
+client = anthropic.Anthropic()
+
+def classify_content(text, language):
+    prompt = f"""Analyze this {language} content for violations.
+    
+Violation types: hate_speech, spam, violence, sexual, none
+
+Content: {text}
+
+Return JSON:
+{{"violation_type": "...", "confidence": 0.0-1.0}}"""
+    
+    response = client.messages.create(
+        model="claude-sonnet-4-20250514",
+        max_tokens=500,
+        messages=[{"role": "user", "content": prompt}]
+    )
+    return response
+# Target: API returns violation + confidence in <3 seconds
+☑ Validation: Test with 100 examples
+👤 Owner: Backend Engineer 1
+⏱️ Deadline: Day 12
+🚩 Risk: API rate limits
+⟿ ◉ If latency >5s → implement caching
+   ◉ If works well → proceed to queue system
+
+---
+
+Phase 2: Queue & Routing (Week 3-4)
+
+Task 2.1: Priority Queue System
+✓ Classification API working
+▶ Action: Build routing logic based on confidence scores
+⚙ Implementation:
+def route_content(result):
+    confidence = result['confidence']
+    
+    if confidence > 0.95:
+        return auto_moderate(result)
+    elif confidence > 0.80:
+        return urgent_review_queue(result)
+    else:
+        return normal_review_queue(result)
+# Target: Content routed in <1 second
+☑ Validation: 100 test items correctly routed
+👤 Owner: Backend Engineer 2
+⏱️ Deadline: Day 18
+🚩 Risk: Thresholds need tuning
+⟿ ◉ After 1 week → optimize thresholds
+
+---
+
+Phase 3: Pilot Launch (Week 5-8)
+
+Task 3.1: A/B Test
+✓ All systems built and tested
+▶ Action: Route 10% through AI, compare with humans
+# Target: AI agrees with humans ≥85%
+☑ Validation: Daily agreement rate reports
+👤 Owner: ML Engineer 1
+⏱️ Deadline: Day 35
+🚩 Risk: Sample may not represent diversity
+⟿ ◉ If agreement <80% → pause, analyze
+   ◉ If ≥85% → proceed to 40% rollout
+
+---
+
+Phase 4: Scale & Optimization (Week 9-26)
+
+Task 4.1: Full Rollout
+✓ A/B test successful (≥85% agreement)
+▶ Action: Scale to 100% of content
+⚙ Implementation:
+- Week 9-12: 40% traffic
+- Week 13-16: 70% traffic
+- Week 17-20: 90% traffic
+- Week 21-26: 100% traffic with monitoring
+# Target: Full automation by Week 26
+☑ Validation: No system degradation, maintain ≥85% agreement
+👤 Owner: Platform Lead
+⏱️ Week 9-26
+🚩 Risk: Scaling issues, performance degradation
+⟿ ◉ If stable → Continue rollout
+   ◉ If issues → Rollback 20% and debug ↻
+
+---
+
+Task 4.2: Cost Optimization
+✓ System running at scale
+▶ Action: Reduce operational costs
+⚙ Implementation:
+1. Implement model caching (reduce API calls by 40%)
+2. Batch processing for non-urgent content
+3. Fine-tune smaller model for common cases
+4. Implement cold storage for old training data
+# Target: Reduce $5M → $2.5M annual cost
+☑ Validation: Monthly cost reports show reduction
+👤 Owner: Finance + Engineering
+⏱️ Continuous optimization
+🚩 Risk: Cost optimization reduces accuracy
+⟿ ◉ If costs down, accuracy stable → Continue
+   ◉ If accuracy drops → Revert optimization ↻
+
+---
+
+Success Metrics Dashboard
+
+Current Metrics
+✓ Automation Rate: 20% (baseline)
+✓ Cost (Annual): $5M (baseline)
+✓ Response Time: 24hr (baseline)
+✓ Precision: N/A (baseline)
+
+Target Metrics
+# Automation Rate: 70%
+# Cost (Annual): $2.5M
+# Response Time: <2hr
+# Precision: ≥95%
+
+Progress Tracking
+⏱️ Weekly: Update all metrics
+👤 Metrics Owner: Project Lead
+🚩 Risk: Metrics manipulation, incomplete data
+⟿ ◉ If on track → Continue
+   ◉ If off track → Weekly adjustment meeting ◉
+
+---
+
+Lessons & Iteration
+✓ Document all false positives/negatives
+✓ Monthly model retraining with new data
+✓ Continuous threshold optimization
+✓ Regular ethical review of moderation decisions
+↻ Quarterly: Full system review and improvement cycle
+
+Project Metadata
+✓ Status: In Progress
+✓ Last Updated: 2026-01-30
+✓ Template Version: 2.0
+✓ Industry: Social Media/Content Platforms
+✓ Complexity: High (multi-language, real-time)
+```
+
+---
+
+📁 SAVE AS EXAMPLE:
+
+```bash
+# Save as example in repository
+mkdir -p examples/content-moderation
+cat > examples/content-moderation/ai-content-moderation.st << 'EOF'
+[PASTE THE CONVERTED TEMPLATE ABOVE]
+EOF
+
+# Add to README examples section
+cat >> README.md << 'EOF'
+
+## 🎯 Real-World Examples
+
+### AI Content Moderation System
+Location: `examples/content-moderation/ai-content-moderation.st`
+
+**Problem:** 10M user platform, $5M/year manual moderation costs, 24-hour response times
+
+**SignumTrace Solution:**
+```
+
+✓ 80% manual → 70% automation
+✓ $5M/year → $2.5M/year cost
+✓ 24hr response → <2hr response
+✓ Single language → English + Arabic support
+
+```
+
+**Key SignumTrace Features Used:**
+- Symbolic progress tracking (✓ ⟿ ▶ #)
+- Risk management (🚩) for language bias, API limits
+- Conditional logic (⟿ ◉) for A/B test decisions
+- Clear ownership (👤) across 5 engineers
+- Timeline management (⏱️) across 26 weeks
+
+**Impact:** Real production system managing 10M users with measurable ROI.
+EOF
+```
+
