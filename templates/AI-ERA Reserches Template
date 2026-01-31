@@ -1,0 +1,147 @@
+# AI-Era Research Project Template
+
+Project Context
+✓ Era: NVIDIA "Stop Coding" - AI generates, humans orchestrate
+✓ Project: [Project Name]
+✓ Goal: [Leverage AI for breakthrough, maintain human oversight]
+👤 Team: Lead Researcher + AI Copilot Team
+# Philosophy: Orchestrate AI, preserve judgment
+
+---
+
+Phase 1: AI-Assisted Problem Definition
+
+Task 1.1: AI-Generate Research Questions
+✓ Current: Broad domain interest
+▶ Action: Use AI (GPT-4, Claude) to generate 20+ research questions
+⚙ Implementation:
+import openai
+
+def generate_research_questions(domain, constraints):
+    prompt = f"Generate novel AI research questions in {domain}"
+    return openai.ChatCompletion.create(
+        model="gpt-4",
+        messages=[{"role": "user", "content": prompt}]
+    )
+# Target: 20+ novel questions, 5+ with high feasibility
+☑ Validation: Human researcher selects top 3, AI ranks feasibility
+👤 Owner: Lead Researcher + AI Assistant
+⏱️ 2 days
+🚩 AI hallucination, derivative ideas
+⟿ ◉ If 3+ promising questions → Proceed
+   ◉ If none viable → Human-led question formulation ↻
+
+---
+
+Task 1.2: AI-Augmented Literature Review
+✓ Current: Manual review overwhelming
+▶ Action: AI-assisted systematic review
+⚙ Implementation:
+# AI literature analyzer
+def analyze_papers(papers):
+    # Extract key insights, identify gaps
+    # Cluster similar work
+    # Generate citation graphs
+    pass
+# Target: 50+ papers reviewed, gaps mapped
+☑ Validation: Human spot-check 10% for accuracy
+👤 Owner: Researcher + AI Agent
+⏱️ 1 week
+🚩 AI misses seminal papers, bias in selection
+⟿ ◉ If comprehensive → Proceed
+   ◉ If gaps identified → Expand search ↻
+
+---
+
+Phase 2: AI-Human Co-Development
+
+Task 2.1: AI Prototype Generation
+✓ Research question defined
+▶ Action: Generate 3+ prototype implementations using AI
+⚙ Implementation:
+# Prompt to AI coding assistant:
+"Implement a prototype for [research question] 
+using [framework]. Include tests and evaluation."
+# Target: 3 working prototypes, each <200 LOC
+☑ Validation: Human review for conceptual correctness
+👤 Owner: AI Agent (primary), Human (review)
+⏱️ 3 days
+🚩 Generated code buggy, conceptual errors
+⟿ ◉ If 1+ viable prototype → Human refinement
+   ◉ If all fail → Adjust prompt/approach ↻
+
+---
+
+Task 2.2: Human-in-the-Loop Refinement
+✓ AI-generated prototypes
+▶ Action: Human refinement with AI assistance
+⚙ Implementation:
+# Human-AI pair programming session
+# 1. Human identifies issues
+# 2. AI suggests fixes
+# 3. Human approves/rejects
+# Target: Production-ready code, tests, documentation
+☑ Validation: Unit tests pass, performance benchmarks
+👤 Owner: Human (70%), AI (30%)
+⏱️ 1 week
+🚩 Over-reliance on AI, loss of understanding
+⟿ ◉ If meets standards → Evaluation phase
+   ◉ If quality issues → More human intervention ↻
+
+---
+
+Phase 3: AI-Enhanced Evaluation
+
+Task 3.1: Automated Experimentation
+✓ Model implemented
+▶ Action: AI-managed hyperparameter search and evaluation
+⚙ Implementation:
+# AutoML-style optimization
+ai_experiment_runner = AILab(
+    model=model,
+    search_space=search_space,
+    objective="accuracy",
+    compute_budget="100 GPU-hours"
+)
+results = ai_experiment_runner.optimize()
+# Target: Optimal configuration found, statistical significance
+☑ Validation: Human review of methodology, AI handles execution
+👤 Owner: AI Agent (execution), Human (design)
+⏱️ 2 weeks (parallel compute)
+🚩 Cost overruns, cherry-picked results
+⟿ ◉ If statistically significant → Writeup
+   ◉ If inconclusive → Adjust experiment design ↻
+
+---
+
+Task 3.2: AI-Assisted Paper Writing
+✓ Results validated
+▶ Action: AI-assisted paper generation with human orchestration
+⚙ Implementation:
+1. AI drafts sections based on results
+2. Human provides feedback, edits
+3. AI revises, checks formatting
+4. Human final approval
+# Target: Conference-ready paper, reproducible results
+☑ Validation: AI plagiarism check, human peer review
+👤 Owner: Human (content), AI (editing/formatting)
+⏱️ 2 weeks
+🚩 AI-generated text lacks nuance, plagiarism
+⟿ ◉ If accepted → Conference + blog post
+   ◉ If rejected → Human-led rewrite for next venue ↻
+
+---
+
+AI Era Research Principles
+✓ Human defines direction, AI generates options
+✓ AI executes at scale, human validates quality
+✓ Symbolic workflows ensure auditability
+✓ Risk management: AI errors caught by human gates
+✓ Efficiency: 3x faster than traditional research
+✓ Quality: Human judgment at critical points
+
+Template Metadata
+✓ Template: AI-Era Research Project
+✓ Version: 3.0
+✓ Philosophy: "Orchestrate AI, Preserve Judgment"
+✓ License: MIT
