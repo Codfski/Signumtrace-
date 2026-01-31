@@ -16,7 +16,7 @@
 **Average efficiency gain:** 3x faster project completion  
 **Team impact:** 70% fewer planning meetings, 100% auditability
 
-👉 [See detailed case study: Content Moderation System](examples/content-moderation-case-study.st)
+👉 [See detailed case study: Content Moderation System](examples/Case Study: Social Media Content Moderation System
 
 **Other examples:**
 - [Medical Crisis Response](templates/medical-crisis-response.st)
