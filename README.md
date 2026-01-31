@@ -18,38 +18,11 @@ Follow the plan step-by-step. Check off completed items (☑) as you progress.
 
 📊 Proven Impact
 
-<table>
-<tr>
-<th>Industry</th>
-<th>Problem</th>
-<th>SignumTrace Solution</th>
-<th>Result</th>
-</tr>
-<tr>
-<td><strong>Social Media</strong></td>
-<td>$5M/year manual content moderation</td>
-<td>AI-human orchestration system</td>
-<td><strong>$2.5M saved</strong> (50% cost reduction)</td>
-</tr>
-<tr>
-<td><strong>Healthcare</strong></td>
-<td>90-day FDA trial delays</td>
-<td>Automated data harmonization</td>
-<td><strong>$19M protected</strong> (76 days saved)</td>
-</tr>
-<tr>
-<td><strong>Finance</strong></td>
-<td>$50M missed trading opportunities</td>
-<td>3-minute crisis response</td>
-<td><strong>$35M captured</strong> during outage</td>
-</tr>
-<tr>
-<td><strong>E-commerce</strong></td>
-<td>15% checkout abandonment</td>
-<td>Symbolic flow optimization</td>
-<td><strong>$18M/year recovered</strong> revenue</td>
-</tr>
-</table>
+Industry Problem SignumTrace Solution Result
+Social Media $5M/year manual content moderation AI-human orchestration system $2.5M saved (50% cost reduction)
+Healthcare 90-day FDA trial delays Automated data harmonization $19M protected (76 days saved)
+Finance $50M missed trading opportunities 3-minute crisis response $35M captured during outage
+E-commerce 15% checkout abandonment Symbolic flow optimization $18M/year recovered revenue
 
 Total value protected: $250M+ annually across deployments
 Average efficiency gain: 3x faster project completion
@@ -89,34 +62,8 @@ Quick Results from Our Case Study:
 
 Traditional Planning vs. SignumTrace
 
-<table>
-<tr>
-<th>Traditional Planning</th>
-<th>SignumTrace Solution</th>
-</tr>
-<tr>
-<td>
-
-· Ambiguous language
-· No clear ownership
-· Success criteria undefined
-· Failure modes undocumented
-· Status unclear
-· Plans ≠ Execution
-
-</td>
-<td>
-
-· Symbolic notation (no ambiguity)
-· Single owner per task (👤)
-· Measurable targets (#)
-· Risk-first thinking (🚩)
-· Explicit decision gates (⟿ ◉)
-· Executable workflows
-
-</td>
-</tr>
-</table>
+Traditional Planning SignumTrace Solution
+• Ambiguous language • No clear ownership • Success criteria undefined • Failure modes undocumented • Status unclear • Plans ≠ Execution • Symbolic notation (no ambiguity) • Single owner per task (👤) • Measurable targets (#) • Risk-first thinking (🚩) • Explicit decision gates (⟿ ◉) • Executable workflows
 
 Core Benefits
 
@@ -216,7 +163,7 @@ Get Involved
 Support Channels
 
 · 📧 Email: codfski@Gmail.com
-· 🐦 Twitter: @Codfski 
+· 🐦 Twitter: @Codfski
 · 💼 LinkedIn: Cidfski
 
 ---
@@ -235,7 +182,7 @@ SignumTrace is built on three core principles:
 
 📄 License
 
-MIT License
+MIT License - see LICENSE
 
 ---
 
@@ -268,7 +215,6 @@ Join hundreds of teams transforming planning into execution.
 
 <div align="center">
   <sub>Built by the TraceOn Lab/🧪CODΞX</sub><br>
-  <sub>Part of the Symbolic Intelligence Revolution
-  →Trace Ξ∞ =  φ(ψ₃) ⨂ Δ(π₁) 🧬
-  📶0021694880880</sub>
+  <sub>Part of the Symbolic Intelligence Revolution →Trace Ξ∞ = φ(ψ₃) ⨂ Δ(π₁) 🧬 
+    📶0021694880880</sub>
 </div>
