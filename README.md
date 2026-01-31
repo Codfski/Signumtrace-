@@ -1,41 +1,55 @@
-# SignumTrace
+#SignumTrace
 
-**Plans that chip.**  
-*Turn project chaos into executable systems with measurable ROI.*
+Plans that chip.
+Turn project chaos into executable systems with measurable ROI.
 
-## 📊 Proven Impact
+📊 Proven Impact
 
-| Industry | Problem | SignumTrace Solution | Result |
-|----------|---------|---------------------|--------|
-| **Social Media** | $5M/year manual content moderation | AI-human orchestration system | **$2.5M saved** (50% cost reduction) |
-| **Healthcare** | 90-day FDA trial delays | Automated data harmonization | **$19M protected** (76 days saved) |
-| **Finance** | $50M missed trading opportunities | 3-minute crisis response | **$35M captured** during outage |
-| **E-commerce** | 15% checkout abandonment | Symbolic flow optimization | **$18M/year recovered** revenue |
+Industry Problem SignumTrace Solution Result
+Social Media $5M/year manual content moderation AI-human orchestration system $2.5M saved (50% cost reduction)
+Healthcare 90-day FDA trial delays Automated data harmonization $19M protected (76 days saved)
+Finance $50M missed trading opportunities 3-minute crisis response $35M captured during outage
+E-commerce 15% checkout abandonment Symbolic flow optimization $18M/year recovered revenue
 
-**Total value protected:** $250M+ annually across deployments  
-**Average efficiency gain:** 3x faster project completion  
-**Team impact:** 70% fewer planning meetings, 100% auditability
+Total value protected: $250M+ annually across deployments
+Average efficiency gain: 3x faster project completion
+Team impact: 70% fewer planning meetings, 100% auditability
 
-👉 [See detailed case study: Content Moderation System](examples/Case Study: Social Media Content Moderation System
+👉 See detailed case study: Social Media Content Moderation System
 
-**Other examples:**
-- [Medical Crisis Response](templates/medical-crisis-response.st)
-- [More templates available](templates/)
+Other examples:
 
-**Quick results from our case study:**
-- **$2.5M saved** annually (50% cost reduction)
-- **1.8 hour response time** (was 24 hours)
-- **70% of content automated**
-- **91.2% accuracy maintained**
+· Medical Crisis Response
+· Financial Trading Outage Recovery
+· E-commerce Checkout Optimization
 
-## Why This Matters
-Most planning tools create documents that never execute. SignumTrace creates **auditable workflows** that:
-1. **Quantify value** in dollars, not abstractions
-2. **Embed risk management** from day one
-3. **Ensure execution** through symbolic tracking
-4. **Scale with AI** while preserving human judgment
+Quick results from our case study:
 
-```
+· $2.5M saved annually (50% cost reduction)
+· 1.8 hour response time (was 24 hours)
+· 70% of content automated
+· 91.2% accuracy maintained
+
+Why This Matters
+
+Most planning tools create documents that never execute. SignumTrace creates auditable workflows that:
+
+1. Quantify value in dollars, not abstractions
+2. Embed risk management from day one
+3. Ensure execution through symbolic tracking
+4. Scale with AI while preserving human judgment
+
+---
+
+Looking for templates to get started?
+Explore our template library for ready-to-use workflow patterns.
+
+---
+
+
+
+
+
  SignumTrace: simply it's Symbolic execution tracking for complex projects**
 
 Stop writing plans that never execute. SignumTrace turns symbolic notation into trackable, executable workflows.
